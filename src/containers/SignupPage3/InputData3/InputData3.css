@@ -1,0 +1,19 @@
+.Link{
+    text-decoration-line: none;
+    border: 1px solid #ccc;
+    background-color: rgb(145, 25, 25);
+    color:white;
+    padding: 15px ;
+    margin: 15px;
+    font-weight: bold;
+    width:33%;
+    flex-flow: row;
+    text-align: center;
+}
+.Form{
+    display:flex;
+    flex-flow: column;
+    width: 40%;
+    margin-left: 20px;
+    margin-top: 20px;
+}

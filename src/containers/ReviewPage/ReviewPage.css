@@ -1,0 +1,17 @@
+.ReviewPage {
+    margin:1%;
+    Padding:2%;
+    box-sizing: border-box;
+}
+.ReviewPage p{
+    display: flex;
+    flex-flow: row;
+}
+.Span {
+    padding: 5px;
+    font-style: italic;
+}
+.Review h4 span {
+    padding: 5px;
+    font-style: italic;
+}
