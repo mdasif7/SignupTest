@@ -3,7 +3,10 @@ import Header from '../../components/Header/Header';
 import SignUpReduxForm from './LoginInputData/LoginInputData';
 import * as actions from '../../store/actions/index';
 import { connect } from 'react-redux';
-import { Redirect } from 'react-router-dom';
+import { Redirect, Link } from 'react-router-dom';
+import classes from './LoginPage.css';
+
+import {Button} from 'material-ui';
 const login = values => {
     const user = JSON.parse(localStorage.getItem('user'))
     return new Promise((resolve, reject) => {
@@ -42,7 +45,13 @@ class LoginPage extends Component {
                 </Header>
                 {this.state.loginError && <h4 style={{color:'red'}}>Email or password is incorrect</h4>}
                 <SignUpReduxForm onSubmit={(values) => { this.loginRedirect(values) }} />
-
+                <Button variant="raised" color="primary" className={classes.SignupButton} >
+                    <Link 
+                    style={{color:'white'}} 
+                    to="/signuppage"
+                    >Click for Signup
+                    </Link>
+                </Button>
             </div>
         );
     }

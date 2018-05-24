@@ -24,7 +24,7 @@ class ReviewPage extends Component {
                     <h4>Email:<span className={classes.Span}>{formData ? formData.email : user.email}</span></h4>
                     <h4>Address:<span  className={classes.Span}>{formData ? formData.address : user.address}</span></h4>
                     <h4>City:<span  className={classes.Span}>{formData ? formData.city : user.city}</span></h4>
-                    <h4>Picture: </h4><img src={formData ? formData.image.values : user.image.values} />
+                    <h4>Picture: </h4><img className={classes.Img} src={formData ? formData.image.values : user.image.values} alt='Display Profile'/>
                 </div>
 
             </div>
